@@ -7,19 +7,23 @@ This project identifies and validates a prognostic enhancer RNA (eRNA) signature
 The project is organized into three main directories. 
 **Note:** `Data_Source` is excluded from the repo due to size limits.
 
-BRCA-eRNA-Prognosis/
-├── Prognosis_R.Rproj         <-- [Critical] Double-click this to open the project
+```text
+Prognosis_R/
+├── Prognosis_R.Rproj         <-- Double-click this to open the project
 ├── README.md                 <-- Project documentation
-├── Data_Source/              <-- [User Must Create] Place raw input files here
-├── R_Scripts/                <-- Analysis code (Step 1-5, QC)
+├── Data_Source/              <-- Contains all raw input files
+│   ├── TCGA_RPKM_eRNA...csv
+│   ├── TCGA-BRCA.star_fpkm.tsv.gz
+│   ├── clinical_info.tsv
+│   └── ... (other omics data)
+├── R_Scripts/                <-- Numbered analysis scripts
 │   ├── 01_Differnetially_expressed_eRNA_Recognition.R
 │   ├── 02_Risk_Score_Stratification&KM_Curve&ROC.R
 │   ├── 03_Independent_Prognostic_Analysis_Cox.R
 │   ├── 04_GSEA_Analysis.R
 │   ├── 11_Comprehensive_Regulatory_Network_eRNA&TF&Gene.R
 │   └── 20_PCA_mRNA_with_eRNA_Tumor&Normal.R
-└── Results/                  <-- Output Figures (.svg/.tiff) and Tables
-
+└── Results/                  <-- Automatically generated Figures (.svg/.tiff) and Tables
 
 ## 💾 Data Preparation (Crucial)
 
@@ -33,7 +37,7 @@ BRCA-eRNA-Prognosis/
 | **mRNA Expr** | `TCGA-BRCA.star_fpkm.tsv.gz` | **UCSC Xena** (TCGA-BRCA) |
 | **Clinical** | `TCGA-BRCA.clinical.tsv` | **UCSC Xena** (Phenotype data) |
 | **Clinical** | `clinical_info.tsv` | **UCSC Xena** (Survival data) |
-| **Mutation** | `PCAWG_WGS_mutations.tsv.gz` | **ICGC / UCSC Xena** |
+| **Mutation** | `PCAWG_WGS_mutations.tsv.gz` | **UCSC Xena** |
 | **CNV** | `TCGA.BRCA.sampleMap_Gistic2_CopyNumber_Gistic2_all_thresholded.by_genes.gz` | **UCSC Xena** (Gistic2) |
 | **Methylation** | `TCGA.BRCA.sampleMap_HumanMethylation450.gz` | **UCSC Xena** (450k Array) |
 | **Annotation** | `probeMap_illuminaMethyl450_hg19_GPL16304_TCGAlegacy` | **UCSC Xena** (Platform Map) |
@@ -78,3 +82,4 @@ BRCA-eRNA-Prognosis/
 ## 🛠 Dependencies
 * **R Version:** 4.x
 * **Key Packages:** `data.table`, `dplyr`, `survival`, `survminer`, `glmnet`, `timeROC`, `ggplot2`, `ComplexHeatmap`, `limma`, `clusterProfiler`, `rtracklayer`.
+
