@@ -24,6 +24,25 @@ Prognosis_R/
 │   └── 20_PCA_mRNA_with_eRNA_Tumor&Normal.R
 └── Results/                  <-- Automatically generated Figures (.svg/.tiff) and Tables
 
+## Data Preparation (Crucial)
+
+**Note:** Due to file size limits, raw data is NOT included in this repository. 
+To reproduce the analysis, please create a folder named `Data_Source` in the root directory and place the following files inside.
+
+** Filenames must match exactly:**
+
+| File Category | Required Filename (Must be Exact) | Source / Description |
+| :--- | :--- | :--- |
+| **Expression** | `TCGA_RPKM_eRNA_300k_peaks_in_Super_enhancer_BRCA.csv` | eRNA Expression Matrix |
+| **Expression** | `TCGA-BRCA.star_fpkm.tsv.gz` | mRNA Expression (Star Counts) |
+| **Clinical** | `clinical_info.tsv` | Patient Clinical Data |
+| **Mutation** | `PCAWG_WGS_mutations.tsv.gz` | WGS Mutation Data |
+| **CNV** | `TCGA.BRCA.sampleMap_Gistic2_CopyNumber_Gistic2_all_thresholded.by_genes.gz` | Gistic2 Copy Number Variation |
+| **Methylation** | `TCGA.BRCA.sampleMap_HumanMethylation450.gz` | 450k Methylation Array |
+| **Annotation** | `probeMap_illuminaMethyl450_hg19_GPL16304_TCGAlegacy` | Methylation Probe Map |
+| **Hi-C** | `loop_info.csv` | Chromatin Loop Data |
+| **Reference** | `hg19ToHg38.over.chain.gz` | LiftOver Chain File |
+
 How to Run 
 Prerequisite: Please open the project by double-clicking Prognosis_R.Rproj. This ensures all file paths (e.g., Data_Source/...) work correctly relative to the root directory.
 
@@ -65,4 +84,5 @@ Bioinformatics: limma, clusterProfiler, org.Hs.eg.db, GenomicRanges, rtracklayer
 
 Notes
 Data_Source: Ensure all large files (e.g., PCAWG_WGS_mutations.tsv.gz) are fully downloaded and placed in the Data_Source/ folder before running Step 5.
+
 Results: All figures are saved in vector format (SVG/PDF) for publication quality.
