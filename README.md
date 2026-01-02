@@ -45,7 +45,7 @@ Prognosis_R/
 | **Reference** | `hg19ToHg38.over.chain.gz` | **UCSC Genome Browser** |
 | **Reference** | `gencode.v36.annotation.gtf.gene.probemap` | **UCSC Xena** |
 
-> **Note:** Scripts `01-03` primarily use `TCGA-BRCA.clinical.tsv`, while Script `11` uses `clinical_info.tsv`. Please ensure both are present.
+> **Note:** Scripts `01-03` primarily use `TCGA-BRCA.clinical.tsv`, while Script `11` uses `clinical_info.tsv`. Please ensure both are present. You can also access via pan.seu.edu.cn if you are a member of the university. For more information, please contact 213230182@seu.edu.cn .
 
 ## 🚀 How to Run
 
@@ -82,5 +82,6 @@ Prognosis_R/
 ## 🛠 Dependencies
 * **R Version:** 4.x
 * **Key Packages:** `data.table`, `dplyr`, `survival`, `survminer`, `glmnet`, `timeROC`, `ggplot2`, `ComplexHeatmap`, `limma`, `clusterProfiler`, `rtracklayer`.
+
 
 
