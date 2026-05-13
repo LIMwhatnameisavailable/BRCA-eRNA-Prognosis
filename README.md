@@ -114,3 +114,14 @@ download the following files into it.
 ## 🛠 Dependencies
 * **R Version:** 4.x
 * **Key Packages:** `survival`, `survminer`, `glmnet`, `timeROC`, `clusterProfiler`, `ggplot2`, `patchwork`, `ggpubr`, `dplyr`, `data.table`.
+
+* ## 📜 License
+
+This project is for research and educational purposes. The TCGA and GTEx data are subject to their respective original license terms.
+
+---
+
+State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University
+
+Contact: 213230182@seu.removethis.edu.cn
+
