@@ -37,7 +37,7 @@ Large files must be downloaded manually and placed in the same directory.
 
 > **Note:** If you are a member of Southeast University, you can access
 > the pre-compiled data via `pan.seu.edu.cn`.
-> For inquiries, please contact 213230182@seu.edu.cn.
+> For inquiries, please contact 213230182@seu.removethis.edu.cn.
 
 ---
 
