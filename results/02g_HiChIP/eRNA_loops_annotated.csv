@@ -1,0 +1,2 @@
+eRNA,eRNA_chrom,eRNA_midpoint,loop_anchor1,loop_anchor2,hit_anchor,other_anchor,other_chrom,other_start,other_end,contact_count,q_value
+eRNA_chr10_5531356,chr10,5531356,"chr10:5,530,000-5,535,000","chr10:5,660,000-5,665,000","chr10:5,530,000-5,535,000","chr10:5,660,000-5,665,000",chr10,5660000,5665000,12,0.00373840195229117

@@ -1,0 +1,45 @@
+# Software Versions for Early Detection Pipeline
+# Environment: mytjw (conda)
+# Location: /mnt/disk2/srtp2024/miniconda3/envs/mytjw
+# Exported: 2026-07-15
+
+## Core Python
+python=3.9.18
+pip=22.3.1
+
+## Data Science
+numpy=2.0.2
+pandas=2.3.1
+scipy=1.13.1
+scikit-learn=1.6.1
+matplotlib=3.8.4
+seaborn=0.13.2
+joblib=1.4.2
+
+## Machine Learning
+xgboost=2.1.3
+lightgbm=4.6.0
+imbalanced-learn=0.12.4
+
+## Deep Learning (GPU)
+pytorch=2.3.1 (CUDA 12.1)
+torchvision=0.18.1
+cudatoolkit=11.8.0
+cudnn=8.9.2.26
+
+## Bioinformatics
+hisat2=2.2.1
+samtools=1.21
+homer=5.1
+sra-tools=2.9.6
+bedtools=2.31.1
+deeptools=3.5.5 (via pip)
+macs2=2.2.9.1
+pybedtools=0.10.0
+pyliftover=0.4.4
+pyGenomeTracks=3.9 (via pip)
+
+## R Environment (for prognostic signature analysis)
+# Located on local machine: Documents/Prognosis_R/
+# Server has no R installation. Key R packages required:
+# survival, glmnet, survminer, ggplot2, dplyr, tidyr, pheatmap
