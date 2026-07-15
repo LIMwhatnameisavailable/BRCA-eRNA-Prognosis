@@ -2,15 +2,6 @@
 
 This directory contains BED files for the 10 prognostic eRNAs identified via LASSO-Cox regression.
 
-> ⚠️ **版本修正说明（2026-07-05）：** 原始 `prognostic_eRNA_10.bed` 坐标来自LASSO回归结果（Table 2），实际为**hg19**版本，但之前被错误标记为hg38。已通过pyliftover（hg19→hg38）转换并替换主BED文件为hg38版本。旧版hg19坐标保留在 `*_hg19.bed` 文件中供兼容旧分析使用。
-
-> **重要：** 使用的GEO数据集的基因组版本如下：
-> - GSE298767/68/69/70/71 (Kraus lab超系列) → **hg38**
-> - GSE200300 (AR/ER ChIP-seq) → **hg38**
-> - GSE245868/251868/251871 (多亚型) → **hg38**
-> - GSE227243 (T47D PRO-seq) → **hg19** ✅（与hg19 BED匹配）
-> - GSE157381 (HiChIP) → **hg19** ✅（与hg19 BED匹配）
-
 ## Files
 
 | File | Description | Window | Genome | Status |
@@ -18,9 +9,6 @@ This directory contains BED files for the 10 prognostic eRNAs identified via LAS
 | `prognostic_eRNA_10.bed` | Summit ±500 bp (1000 bp window) | ±500 bp | **hg38** ✅ | 主文件 |
 | `prognostic_eRNA_10_2kb.bed` | Extended window for deepTools visualization | ±2000 bp | **hg38** ✅ | 主文件 |
 | `prognostic_eRNA_10_summit.bed` | Raw summit single-base coordinates (motif analysis) | 1 bp | **hg38** ✅ | 主文件 |
-| `prognostic_eRNA_10_hg19.bed` | Original summit ±500 bp (LASSO paper coordinates) | ±500 bp | **hg19** | 兼容旧分析 |
-| `prognostic_eRNA_10_2kb_hg19.bed` | Original extended window | ±2000 bp | **hg19** | 兼容旧分析 |
-| `prognostic_eRNA_10_summit_hg19.bed` | Original raw summit | 1 bp | **hg19** | 兼容旧分析 |
 
 ## eRNA Summit Coordinates (hg38, liftOver-corrected)
 
