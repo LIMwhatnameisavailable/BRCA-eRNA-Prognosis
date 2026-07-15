@@ -25,13 +25,14 @@ BRCA-eRNA-Prognosis/
 │   ├── 6_Candidate_Drug&Immune_Analysis.R
 │   ├── 7_PCA_mRNA_with_eRNA_Tumor&Normal.R
 │   └── 8_Quality_Control_for_Normal_Like_References.R
+├── environment/               <-- R and Python environment configuration
 └── Supplementary_Materials/  <-- Supplementary analysis code, figures, and tables
     ├── code/                 <-- Multi-omics Python & shell scripts
     ├── figures/              <-- Supplementary Figures S5-S10
     ├── tables/               <-- Supplementary Tables S1-S12
     ├── results/              <-- Intermediate analysis CSV files
-    ├── shared_reference/     <-- Prognostic eRNA BED coordinates (hg38/hg19)
-    └── environment/          <-- Conda environment configuration
+    └── shared_reference/     <-- Prognostic eRNA BED coordinates (hg38/hg19)
+
 ```
 
 ## 💾 Data Preparation & Setup
@@ -124,7 +125,7 @@ download the following files into it.
 | `Supplementary_Materials/tables/` | Supplementary Tables S1–S12 (differentially expressed eRNAs, clinical data, Cox regression, risk score, PAM50 stratification, GSEA enrichment, regulatory network, L1000FWD candidates) |
 | `Supplementary_Materials/results/` | Intermediate CSV results from AR/ESR1 co-localization analysis, HiChIP loop annotation, and eRNA-target gene mapping (expression, correlations, CoxPH coefficients) |
 | `Supplementary_Materials/shared_reference/` | BED files for the 10 prognostic eRNA loci in hg38 (liftOver-corrected) and hg19 (original) coordinates, with genomic annotations |
-| `Supplementary_Materials/environment/` | Conda environment YAML and software version list for the Python analysis scripts |
+| `environment/` | R environment package list (R_packages.txt) and Python conda environment (python_environment.yml) with software versions |
 
 ## 🛠 Dependencies
 * **R Version:** 4.x
