@@ -131,9 +131,9 @@ download the following files into it.
 * **R Version:** 4.x
 * **Key Packages:** `survival`, `survminer`, `glmnet`, `timeROC`, `clusterProfiler`, `ggplot2`, `patchwork`, `ggpubr`, `dplyr`, `data.table`.
 
-* ## 📜 License
-
-This project is for research and educational purposes. The TCGA and GTEx data are subject to their respective original license terms.
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
+The TCGA and GEO data are subject to their respective original license terms.
 
 ---
 
