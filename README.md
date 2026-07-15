@@ -6,7 +6,7 @@ This project identifies and validates a prognostic enhancer RNA (eRNA) signature
 ## 🌐 Interactive Web Application 
 To make our models accessible to clinicians and researchers without programming expertise, we have deployed a user-friendly online tool: eRNACare. You can upload your own eRNA expression profiles to get real-time diagnostic predictions without running any code.
 
-### **Access the Web App here:** https://limseu.shinyapps.io/ernacare/
+### **Access the Web App here:** [ernacare](https://limseu.shinyapps.io/ernacare/)
 
 ## 📂 Repository Structure
 The project is organized to reflect the chronological workflow of the associated manuscript.
@@ -60,7 +60,7 @@ Large files must be downloaded manually and placed in the same directory.
 | `hg19ToHg38.over.chain.gz` | UCSC liftOver reference |
 | `loop_info.csv` | Hi-C loop data (GEO: GSE157381) |
 | `probeMap_illuminaMethyl450_hg19_GPL16304_TCGAlegacy` | Methylation 450k probe annotation |
-| `L1000_Result.csv` | L1000FWD — Submit your gene signature at https://maayanlab.cloud/L1000FWD/ and export results |
+| `L1000_Result.csv` | Submit your gene signature at [L1000FWD](https://maayanlab.cloud/L1000FWD/) and export results |
 | `DrugPredictions.csv` | Pre-computed IC50 drug sensitivity matrix generated via oncoPredict package |
 
 ---
@@ -81,7 +81,7 @@ download the following files into it.
 | Harmonized Expression | `TcgaTargetGtex_rsem_gene_tpm.tsv` | **UCSC Xena** | Cohort: TCGA TARGET GTEx → Gene expression RNAseq (TOIL) |
 | Reference | `hg19ToHg38.over.chain.gz` | **UCSC Genome Browser** | https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/ |
 
-> 💡 **UCSC Xena main portal:** https://xenabrowser.net/datapages/
+> 💡 **UCSC Xena main portal:** [xena](https://xenabrowser.net/datapages/)
 > All Xena files above can be located by searching the filename or
 > dataset name directly in the portal.
 
