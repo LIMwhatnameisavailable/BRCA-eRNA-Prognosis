@@ -21,7 +21,7 @@ BRCA-eRNA-Prognosis/
 │   ├── 2_Risk_Score_Stratification_and_KM_Analysis.R
 │   ├── 3_Independent_Prognostic_Analysis_Cox.R
 │   ├── 4_GSEA_for_Risk_Groups.R
-│   ├── 5_Comprehensive_Regulatory_Network_eRNA&TF&Gene.R
+│   ├── 5_Comprehensive_Regulatory_Network.R
 │   ├── 6_Candidate_Drug_Immune_Analysis.R
 │   ├── 7_PCA_eRNA_with_mRNA.R
 │   └── 8_Quality_Control_for_Normal_Like_References.R
