@@ -18,7 +18,7 @@ BRCA-eRNA-Prognosis/
 ├── Data_Source/              <-- Contains all raw input files (Need to be downloaded)
 ├── R_Scripts/                <-- Sequentially numbered analysis scripts
 │   ├── 1_Differentially_Expressed_eRNA_Recognition.R
-│   ├── 2_Risk_Score_Stratification_and_KMe.R
+│   ├── 2_Risk_Score_Stratification_and_KM_Analysis.R
 │   ├── 3_Independent_Prognostic_Analysis_Cox.R
 │   ├── 4_GSEA_for_Risk_Groups.R
 │   ├── 5_Comprehensive_Regulatory_Network_eRNA&TF&Gene.R
