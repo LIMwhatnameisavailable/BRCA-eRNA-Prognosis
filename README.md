@@ -1,4 +1,5 @@
 # TCGA-BRCA eRNA Prognostic Signature Project
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21381612.svg)](https://doi.org/10.5281/zenodo.21381612)
 
 ## 📌 Project Overview
 This project identifies and validates a prognostic enhancer RNA (eRNA) signature for Breast Cancer (BRCA) using multi-omics data. The analysis pipeline seamlessly integrates differential expression analysis, LASSO-Cox modeling, GSEA pathway enrichment, multi-omics regulatory network construction (CNV, Mutation, Hi-C), drug sensitivity prediction, and rigorous quality control of normal-like references for further early-discrimination model.
