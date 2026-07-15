@@ -25,14 +25,13 @@ BRCA-eRNA-Prognosis/
 │   ├── 6_Candidate_Drug&Immune_Analysis.R
 │   ├── 7_PCA_mRNA_with_eRNA_Tumor&Normal.R
 │   └── 8_Quality_Control_for_Normal_Like_References.R
-├── Results/                  <-- Automatically generated Figures and Tables
-│   └── Drug_Analysis/        <-- L1000FWD web results and drug prediction plots
-├── code/                     <-- Multi-omics Python & shell scripts (supplementary analysis)
-├── figures/                  <-- Supplementary Figures S5-S10
-├── tables/                   <-- Supplementary Tables S1-S12
-├── results/                  <-- Intermediate analysis CSV files
-├── shared_reference/         <-- Prognostic eRNA BED coordinates (hg38/hg19)
-└── environment/              <-- Conda environment configuration
+└── Supplementary_Materials/  <-- Supplementary analysis code, figures, and tables
+    ├── code/                 <-- Multi-omics Python & shell scripts
+    ├── figures/              <-- Supplementary Figures S5-S10
+    ├── tables/               <-- Supplementary Tables S1-S12
+    ├── results/              <-- Intermediate analysis CSV files
+    ├── shared_reference/     <-- Prognostic eRNA BED coordinates (hg38/hg19)
+    └── environment/          <-- Conda environment configuration
 ```
 
 ## 💾 Data Preparation & Setup
@@ -60,8 +59,8 @@ Large files must be downloaded manually and placed in the same directory.
 | `hg19ToHg38.over.chain.gz` | UCSC liftOver reference |
 | `loop_info.csv` | Hi-C loop data (GEO: GSE157381) |
 | `probeMap_illuminaMethyl450_hg19_GPL16304_TCGAlegacy` | Methylation 450k probe annotation |
-| `L1000_Result.csv` → place in `Results/Drug_Analysis/` | L1000FWD | Submit your gene signature at https://maayanlab.cloud/L1000FWD/ and export results |
-| `DrugPredictions.csv` → place in `Results/Drug_Analysis/`| Pre-computed IC50 drug sensitivity matrix generated via oncoPredict package |
+| `L1000_Result.csv` | L1000FWD — Submit your gene signature at https://maayanlab.cloud/L1000FWD/ and export results |
+| `DrugPredictions.csv` | Pre-computed IC50 drug sensitivity matrix generated via oncoPredict package |
 
 ---
 
@@ -120,12 +119,12 @@ download the following files into it.
 
 | Directory | Description |
 | :--- | :--- |
-| `code/` | Python and shell scripts for multi-omics regulatory network analysis: ATAC-seq TF motif enrichment, ChIP-seq TF tracks, AR/ESR1 colocalization, RNA-seq eRNA signal, PRO-seq nascent transcription, H3K27ac/PolII profiling, HiChIP loop analysis, and eRNA-target gene identification |
-| `figures/` | Supplementary Figures S5–S10 (PRO-seq/H3K27ac, multi-subtype chromatin, TF tracks, HiChIP loops, AR/ESR1 colocalization, ATAC-seq motifs) |
-| `tables/` | Supplementary Tables S1–S12 (differentially expressed eRNAs, clinical data, Cox regression, risk score, PAM50 stratification, GSEA enrichment, regulatory network, L1000FWD candidates) |
-| `results/` | Intermediate CSV results from AR/ESR1 co-localization analysis, HiChIP loop annotation, and eRNA-target gene mapping (expression, correlations, CoxPH coefficients) |
-| `shared_reference/` | BED files for the 10 prognostic eRNA loci in hg38 (liftOver-corrected) and hg19 (original) coordinates, with genomic annotations |
-| `environment/` | Conda environment YAML and software version list for the Python analysis scripts |
+| `Supplementary_Materials/code/` | Python and shell scripts for multi-omics regulatory network analysis: ATAC-seq TF motif enrichment, ChIP-seq TF tracks, AR/ESR1 colocalization, RNA-seq eRNA signal, PRO-seq nascent transcription, H3K27ac/PolII profiling, HiChIP loop analysis, and eRNA-target gene identification |
+| `Supplementary_Materials/figures/` | Supplementary Figures S5–S10 (PRO-seq/H3K27ac, multi-subtype chromatin, TF tracks, HiChIP loops, AR/ESR1 colocalization, ATAC-seq motifs) |
+| `Supplementary_Materials/tables/` | Supplementary Tables S1–S12 (differentially expressed eRNAs, clinical data, Cox regression, risk score, PAM50 stratification, GSEA enrichment, regulatory network, L1000FWD candidates) |
+| `Supplementary_Materials/results/` | Intermediate CSV results from AR/ESR1 co-localization analysis, HiChIP loop annotation, and eRNA-target gene mapping (expression, correlations, CoxPH coefficients) |
+| `Supplementary_Materials/shared_reference/` | BED files for the 10 prognostic eRNA loci in hg38 (liftOver-corrected) and hg19 (original) coordinates, with genomic annotations |
+| `Supplementary_Materials/environment/` | Conda environment YAML and software version list for the Python analysis scripts |
 
 ## 🛠 Dependencies
 * **R Version:** 4.x
