@@ -7,7 +7,7 @@
 [![eRNACare](https://img.shields.io/badge/WebApp-eRNACare-brightgreen)](https://limseu.shinyapps.io/ernacare/)
 
 ## 📌 Project Overview
-This project identifies and validates a prognostic enhancer RNA (eRNA) signature for Breast Cancer (BRCA) using multi-omics data. The analysis pipeline seamlessly integrates differential expression analysis, LASSO-Cox modeling, GSEA pathway enrichment, multi-omics regulatory network construction (CNV, Mutation, Hi-C), drug sensitivity prediction, and rigorous quality control of normal-like references for further early-discrimination model.
+This project identifies and validates a prognostic enhancer RNA (eRNA) signature for Breast Cancer (BRCA) using multi-omics data. The analysis pipeline seamlessly integrates differential expression analysis, LASSO-Cox modeling, GSEA pathway enrichment, multi-omics regulatory network construction (CNV, Mutation, Hi-ChIP), drug sensitivity prediction, and rigorous quality control of normal-like references for further early-discrimination model.
 
 ## 🌐 Interactive Web Application 
 To make our models accessible to clinicians and researchers without programming expertise, we have deployed a user-friendly online tool: eRNACare. You can upload your own eRNA expression profiles to get real-time diagnostic predictions without running any code.
@@ -107,7 +107,7 @@ download the following files into it.
 * **Script 4:** `4_GSEA_for_Risk_Groups.R`
   * **Function:** Performs Gene Set Enrichment Analysis (GSEA) to uncover pathways driving the high-risk phenotype.
 * **Script 5:** `5_Comprehensive_Regulatory_Network.R`
-  * **Function:** Integrates WGS mutations, CNV, and Hi-C validated chromatin loops to map upstream TF hubs and downstream targets.
+  * **Function:** Integrates WGS mutations, CNV, and Hi-ChIP validated chromatin loops to map upstream TF hubs and downstream targets.
 
 ### Part III: Clinical Translation & Therapeutics
 * **Script 6:** `6_Candidate_Drug&Immune_Analysis.R`
